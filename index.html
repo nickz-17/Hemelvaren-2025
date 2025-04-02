@@ -3,89 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hemelvaren Festival 2025</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 20px;
-        }
-        .ticket-button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background: #e74c3c;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        #countdown {
-            font-size: 1.5em;
-            margin: 20px 0;
-        }
-        section {
-            margin: 20px;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-    </style>
+    <title>Mijn Website</title>
 </head>
 <body>
-    <header>
-        <h1>Hemelvaren Festival 2025</h1>
-        <p>Na de grote successen van Hemelvaren 2023 en 2024 zijn we dit jaar weer terug. Zoals voorgaande jaren keren we weer terug naar onze vertrouwde locatie "Into the Woods". Er wordt hard gewerkt aan de line-up en deze wordt verdeeld over twee betoverende stages.</p>
-        <div id="countdown"></div>
-        <a href="https://eventix.io" target="_blank" class="ticket-button">Koop Tickets</a>
-    </header>
-    
-    <section id="line-up">
-        <h2>Line-up</h2>
-        <p>De line-up wordt binnenkort bekendgemaakt.</p>
-    </section>
-    
-    <section id="gallery">
-        <h2>Foto's</h2>
-        <p>Hier komen later foto's van het festival.</p>
-    </section>
-
-    <script>
-        function startCountdown() {
-            const eventDate = new Date("July 17, 2025 00:00:00").getTime();
-            const countdownElement = document.getElementById("countdown");
-            
-            function updateCountdown() {
-                const now = new Date().getTime();
-                const timeLeft = eventDate - now;
-                
-                if (timeLeft <= 0) {
-                    countdownElement.innerHTML = "Het festival is begonnen!";
-                    return;
-                }
-                
-                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-                
-                countdownElement.innerHTML = `${days}d ${hours}u ${minutes}m ${seconds}s`;
-            }
-            
-            setInterval(updateCountdown, 1000);
-            updateCountdown();
-        }
-        
-        document.addEventListener("DOMContentLoaded", startCountdown);
-    </script>
+    <h1>Welkom op mijn testpagina!</h1>
+    <p>Dit is een eenvoudige pagina om GitHub Pages te testen.</p>
 </body>
 </html>
